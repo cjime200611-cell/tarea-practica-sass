@@ -1,0 +1,139 @@
+$colorh3: #7f0f28;
+$color2nd: #AA1535;
+$color3rd: #585858;
+$font: Arial, Helvetina, sans-serif;
+
+@mixin tarjetas {
+  width: 450px;
+  height: 330px;
+  float: left;
+  background-color: #f4f4f4;
+  border: 1px solid #DDDDDD;
+  padding: 20px;
+}
+
+@mixin titulos {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+// Globales
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40PX;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  font: $font;
+}
+
+/* Header */
+header {
+  border-top: 15px #e8e8e8 100%;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: normal;
+  color: #585858;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  @include titulos();
+  color: $colorh3;
+}
+
+h4 {
+  @include titulos();
+  color: $color3rd;
+}
+
+//Navegación
+.navegacion {
+  display: flex; /* pone el menú en línea horizontal */
+  justify-content: space-evenly; /* lo distribuye totalmente equitativo */
+  border-bottom: 4px solid #888;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  a {
+    font-size: 15px;
+    font-weight: normal;
+    color: $color3rd;
+    text-decoration: none;
+  }
+}
+
+// Hero
+.hero {
+  h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: $color2nd;
+    }
+
+  p {
+    width: 100%;
+    font-size: 13px;
+    font-weight: normal;
+    color: #7F8C8D;
+    line-height: 1.5;
+    }
+}
+
+// Tarjetas
+#tarjeta1 {
+  @include tarjetas();
+
+  img {
+    float: right;
+    width: 120px;
+  }
+
+  a {
+    float: right;
+    font-size: 13px;
+    color: $color2nd;
+  }
+}
+
+#tarjeta2 {
+  @include tarjetas();
+
+  img {
+    float: right;
+    width: 140px;
+  }
+
+  a {
+    float: right;
+    font-size: 13px;
+    color: $color2nd;
+  }
+}
+
+// Footer
+.Footer {
+  background-color: #E5DED4;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-top: 40px;
+
+  p {
+    color: $color2nd;
+    font-size: 13px;
+    text-align: center;
+  }
+}
