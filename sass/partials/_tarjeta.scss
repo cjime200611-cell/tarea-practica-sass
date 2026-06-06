@@ -1,0 +1,38 @@
+$color2nd: #AA1535;
+
+@mixin tarjetas {
+width: 450px;
+height: 330px;
+float: left;
+background-color: #f4f4f4;
+border: 1px solid #DDDDDD;
+padding: 20px;
+}
+
+#tarjeta1 {
+@include tarjetas();
+img {
+    float: right;
+    width: 120px;
+}
+
+a {
+    float: right;
+    font-size: 13px;
+    color: $color2nd;
+}
+}
+
+#tarjeta2 {
+@include tarjetas();
+img {
+    float: right;
+    width: 140px;
+}
+
+a {
+    float: right;
+    font-size: 13px;
+    color: $color2nd;
+}
+}

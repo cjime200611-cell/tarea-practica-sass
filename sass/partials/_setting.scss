@@ -1,0 +1,18 @@
+$color3rd: #585858;
+$color2nd: #AA1535;
+$colorh3: #7f0f28;
+$font: Arial, Helvetina, sans-serif;
+
+@mixin titulos {
+font-size: 15px;
+font-weight: bold;
+}
+
+@mixin tarjetas {
+width: 450px;
+height: 330px;
+float: left;
+background-color: #f4f4f4;
+border: 1px solid #DDDDDD;
+padding: 20px;
+}

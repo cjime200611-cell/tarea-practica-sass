@@ -1,0 +1,19 @@
+$font: Arial, Helvetina, sans-serif;
+
+// Globales
+.container {
+width: 1000px;
+margin: 0 auto;
+padding-left: 40px;
+padding-right: 40PX;
+}
+
+.clearfix::after {
+content: "";
+display: table;
+clear: both;
+}
+
+body {
+font: $font;
+}
